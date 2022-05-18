@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+
+    <section>
+      <div class="container p-5 rounded-3 shadow-lg">
+        <h2 class="fw-bolder text-center pb-4">Products Management System</h2>
+        <div class="row gy-4">
+          <div class="col-12">
+            <label for="productName" class="form-label">Product Name</label>
+            <input id="productName" type="text" class="form-control">
+
+            <label for="productPrice" class="form-label mt-4">Product Price</label>
+            <input id="productPrice" type="number" class="form-control">
+
+            <label for="productCategory" class="form-label mt-4">Product Category</label>
+            <input id="productCategory" type="text" class="form-control">
+
+            <label for="productDesc" class="form-label mt-4">Product Description</label>
+            <textarea name="" id="productDesc" class="form-control" cols="30" rows="2"></textarea>
+
+            <button  id="main" onclick="mainBtn()" class="btn btn-outline-success mt-4">Add Product</button>
+          </div>
+
+
+          <div class="col-12 ">
+            <input type="text" onkeyup="searchProductName()" id="search" class="form-control w-50 m-auto my-3" placeholder="Search Product Name">
+            <table class="table shadow rounded-3">
+              <thead class="text-center">
+                <th>Index</th>
+                <th>product Name</th>
+
+                <th>product Price</th>
+                <th>product Category</th>
+                <th>product Description</th>
+                <th>Update</th>
+                <th>Delete</th>
+              </thead> 
+
+              <tbody id="pro">
+                
+
+
+
+              </tbody>
+
+
+            </table>
+
+
+
+          </div>
+
+
+
+
+
+
+        </div>
+
+
+
+      </div>
+   </section>
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
